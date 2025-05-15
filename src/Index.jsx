@@ -50,8 +50,8 @@ function Index() {
     return (
         <section className="w-screen h-screen bg-stone-300 flex items-center p-3 flex-col">
             <div className="flex flex-col items-center p-6">
-                <h1 className="text-violet-500 font-bold text-4xl mb-3">Tarefas</h1>
-                <p className="text-stone-600">Organize suas tarefas com simplicidade</p>
+                <h1 className="text-violet-500 font-bold text-4xl mb-3 text-center">Tarefas</h1>
+                <p className="text-stone-600 text-center">Organize suas tarefas com simplicidade</p>
             </div>
             <div className="w-full bg-stone-50 rounded-md p-2 lg:w-[60%]">
                 <AddTasks onAddTask={onAddTask} />
@@ -59,7 +59,7 @@ function Index() {
                 <Tasks tarefas={tarefas} onDeleteClick={onDeleteClick} onTaskClick={onTaskClick} onUpdateClick={onUpdateClick} filtro={filtro} />
             </div>
             <div className="text-stone-600 p-7">
-                <p>Desenvolvido por <a href="https://leandroarantes.com.br/" target="_blank" className="text-violet-500 font-bold">Leandro Arantes</a>.</p>
+                <p className="text-center">Desenvolvido por <a href="https://leandroarantes.com.br/" target="_blank" className="text-violet-500 font-bold">Leandro Arantes</a>.</p>
             </div>
         </section>
     )
